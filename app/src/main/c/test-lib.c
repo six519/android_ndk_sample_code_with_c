@@ -38,9 +38,10 @@ JNIEXPORT jstring JNICALL
 Java_com_ferdinandsilva_ctest_MainActivity_testFunction(JNIEnv* env, jobject thiz)
 {
     char *concatenated;
+    char text[] = "Hello from JNI! Compiled with ABI ";
     jstring retString;
-    concatenated = malloc(strlen("Hello from JNI! Compiled with ABI ") + strlen(ABI) + 2);
-    strcpy(concatenated, "Hello from JNI! Compiled with ABI ");
+    concatenated = malloc(strlen(text) + strlen(ABI) + 2);
+    strcpy(concatenated, text);
     strcat(concatenated, ABI);
     strcat(concatenated, ".");
 
