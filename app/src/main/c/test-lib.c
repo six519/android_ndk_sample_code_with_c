@@ -2,6 +2,9 @@
 #include <string.h>
 #include <stdlib.h>
 
+/*
+ * Copied ABI definition here: https://github.com/android/ndk-samples/blob/main/hello-jni/app/src/main/cpp/hello-jni.c
+ */
 #if defined(__arm__)
 #if defined(__ARM_ARCH_7A__)
     #if defined(__ARM_NEON__)
